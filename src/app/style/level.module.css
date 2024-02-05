@@ -1,0 +1,74 @@
+.main {
+    text-align: center;
+}
+.main {
+    text-align: center;
+}
+.box {
+    width: 310px;
+    /* height: 500px; */
+    min-height: 60px;
+    border: 2px solid ;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+    box-shadow: 0 0 10px white;
+}
+.circle {
+    display: flex;
+    align-items: center; /* Aligns child content to the bottom */
+    justify-content: center; /* Centers content horizontally */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: yellow;
+    cursor: pointer;
+    color: #000;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1; /* Start with a base z-index */
+}
+
+.game_contant{
+  display: flex;
+  justify-content: center;
+}
+.bounce{
+    animation: bounce 1s ease;
+  }
+  
+
+@keyframes bounce {
+    0%{
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+  .btn{
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: gold;
+    border: none;
+    border-radius: 20px;
+  }
+  .mainstyle{
+    text-align: center;
+  }
+  
+
+
