@@ -1,7 +1,8 @@
 "use client";
 import LevelManage from '@/components/LevelManage';
-import React , {useEffect, useState} from 'react'
-import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react'
+import {useRouter} from 'next/navigation';
+
 
 const page = (params:any) => {
   const router = useRouter();
