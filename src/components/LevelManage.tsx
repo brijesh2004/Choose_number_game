@@ -29,18 +29,18 @@ const LevelManage = (props:any) => {
      // console.log(myArray);
 
      const clickFun = (e: any) => {
-      console.log("tar" , e.target.innerText);
+     // console.log("tar" , e.target.innerText);
       let clickedNum = Number(e.target.innerText);
       setArray(array => {
         if (Math.max(...array) === clickedNum) {
-          console.log("true");
+          // console.log("true");
 
           // Ensure numerical sorting before slicing
           let newArray = [...array].sort((a, b) => a - b).slice(0, -1);
           setArrlen(newArray.length);
           return shuffleArray(newArray); // Shuffle and return the new array
         } else {
-          e.target.backgroundColor='red';
+         // e.target.backgroundColor='red';
           return shuffleArray([...array]); // Just shuffle and return the array if not matching
         }
       });
